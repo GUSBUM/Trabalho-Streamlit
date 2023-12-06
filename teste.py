@@ -1,2 +1,9 @@
+!pip install streamlit
+
 import streamlit as st
-print('Hola mundo')
+import pandas as pd 
+
+
+st.write("""
+# Calculadora de custo de energia*
+""")
