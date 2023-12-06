@@ -3,11 +3,12 @@ import pandas as pd
 import altair as alt
  
 st.write("""
-# My first app
-Hello *world!*
+# Testando*
 """)
 
 n1 = bool(st.checkbox('TESTA AI'))
-print(n1)
+
+
+st.caption('bimbimbambam')
  
 
