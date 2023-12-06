@@ -8,6 +8,6 @@ Hello *world!*
 """)
 
 n1 = bool(st.checkbox('TESTA AI'))
+print(n1)
  
-df = pd.read_csv("my_data.csv")
-st.line_chart(df)
+
