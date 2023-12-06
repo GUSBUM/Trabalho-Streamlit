@@ -7,7 +7,7 @@ st.write("""
 Hello *world!*
 """)
 
-st.checkbox('TESTA AI')
+n1 = bool(st.checkbox('TESTA AI'))
  
 df = pd.read_csv("my_data.csv")
 st.line_chart(df)
