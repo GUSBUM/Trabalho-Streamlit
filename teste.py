@@ -1,20 +1,17 @@
 import streamlit as st
-from pathlib import Path
-import base64
 
-# Initial page config
-
-st.set_page_config(
-     page_title='Streamlit cheat sheet',
-     layout="wide",
-     initial_sidebar_state="expanded",
+# Using object notation
+add_selectbox = st.sidebar.selectbox(
+    "How would you like to be contacted?",
+    ("Email", "Home phone", "Mobile phone")
 )
 
-def main():
-    cs_sidebar()
-    cs_body()
-
-    return None
+# Using "with" notation
+with st.sidebar:
+    add_radio = st.radio(
+        "Choose a shipping method",
+        ("Standard (5-15 days)", "Express (2-5 days)")
+    )
 
  
 
