@@ -1,14 +1,11 @@
 import streamlit as st
 
-# Using object notation
-add_selectbox = st.sidebar.selectbox(
-    "How would you like to be contacted?",
-    ("Email", "Home phone", "Mobile phone")
-)
+# Initialize st.session_state.beans
+st.session_state.beans = st.session_state.get("beans", 0)
 
-# Using "with" notation
-with st.sidebar:
-    add_radio = st.radio(
-        "Choose a shipping method",
-        ("Standard (5-15 days)", "Express (2-5 days)")
-    )
+st.title("Bean counter :paw_prints:")
+
+addend = st.number_input("Beans to add", 0, 10)
+if st.button("Add"):
+    st.session_state.beans += addend
+st.markdown(f"Beans counted: {st.session_state.beans}")
