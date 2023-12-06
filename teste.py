@@ -6,7 +6,7 @@ st.write("""
 # Testando*
 """)
 
-n1 = bool(st.checkbox('TESTA AI'))
+st.image('./lhama-scaled.jpg')
 
 
 st.caption('bimbimbambam')
