@@ -3,9 +3,9 @@ import pandas as pd
  
 # Crie um dataframe de exemplo
 data = pd.DataFrame({
-  'Frutas': ['Maçãs', 'Laranjas', 'Bananas', 'Uvas'],
-  'Quantidade': [15, 25, 35, 45]
+  'Ano': [2018, 2019, 2020, 2021],
+  'Vendas': [350, 480, 550, 680]
 })
  
-# Crie um gráfico de barras
-st.bar_chart(data)
+# Crie um gráfico de linhas
+st.line_chart(data)
