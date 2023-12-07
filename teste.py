@@ -1,11 +1,12 @@
 import streamlit as st
-import pandas as pd
+import matplotlib.pyplot as plt
  
-# Crie um dataframe de exemplo
-data = pd.DataFrame({
-  'Ano': [2018, 2019, 2020, 2021],
-  'Vendas': [350, 480, 550, 680]
-})
+# Gera alguns dados aleatórios
+data = np.random.normal(0, 1, size=100)
  
-# Crie um gráfico de linhas
-st.line_chart(data)
+# Cria um histograma com cor e título personalizados
+plt.hist(data, bins=20, color='skyblue', edgecolor='black')
+plt.title('Meu Histograma Personalizado')
+ 
+# Exibe o gráfico no Streamlit
+st.pyplot()
