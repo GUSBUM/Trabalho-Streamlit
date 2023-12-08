@@ -4,4 +4,5 @@ import pandas as pd
 import numpy as np
 import altair as alt
 
-st.title('Conversor de Moeda')
+st.image('./Capturar.PNG')
+st.title('Sobre')
