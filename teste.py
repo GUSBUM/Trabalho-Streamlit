@@ -1,3 +1,5 @@
 import streamlit as st
 
-col1.write('Column 1')
+st.button('Hit me')
+st.data_editor('Edit data', data)
+st.checkbox('Check me out')
