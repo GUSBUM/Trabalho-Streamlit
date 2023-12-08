@@ -1,3 +1,3 @@
 import streamlit as st
 
-st.image('lhama-scaled.jpg')
+col1.write('Column 1')
