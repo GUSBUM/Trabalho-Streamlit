@@ -3,4 +3,4 @@ import pandas as pd
 import requests
 from datetime import datetime
 
-st.image('./Logo.PNG')
+st.image('./Capturar.PNG')
